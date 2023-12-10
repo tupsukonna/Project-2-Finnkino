@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ongoing Finnkino Movies</title>
+    <link rel="stylesheet" href="movieStyle.css">
+</head>
+<body>
+    <!-- First container for all parts of the stucture -->
+    <div class="containerA">
+        <!-- Finnkino Logo Picture -->
+        <img src="Finnkino_logo_2022.png" alt="" width="250" heigth="82">
+        <!-- Headings -->
+        <h1>Which Movies are Playing Today?</h1>
+        <!-- Container for the theater buttons and the movie results-->
+        <div class="containerB">
+            <h2>Choose a Theater:</h2>
+            <!-- List of the theaters. They have the same ID's as the have in the Finnkino XML -->
+            <div class="theaterList" id="theaterList">
+                <button class="theaterButton" onclick="chooseTheater(1039)">Espoo: Sello</button>
+                <button class="theaterButton" onclick="chooseTheater(1045)">Helsinki: Itis</button>
+                <button class="theaterButton" onclick="chooseTheater(1031)">Helsinki: Kinopalatsi</button>
+                <button class="theaterButton" onclick="chooseTheater(1015)">Jyväskylä: Fantasia</button>
+                <button class="theaterButton" onclick="chooseTheater(1016)">Kuopio: Scala</button>
+                <button class="theaterButton" onclick="chooseTheater(1017)">Lahti: Kuvapalatsi</button>
+                <button class="theaterButton" onclick="chooseTheater(1018)">Oulu: Plaza</button>
+                <button class="theaterButton" onclick="chooseTheater(1021)">Tampere</button>
+                <button class="theaterButton" onclick="chooseTheater(1022)">Turku: Kinopalatsi</button>
+                <button class="theaterButton" onclick="chooseTheater(1013)">Vantaa: Flamingo</button>
+            </div>
+            <!-- Container where the movie results are put in -->
+            <div class="movieResults" id="movieResults"></div>
+        </div>
+    </div>
+    <!-- Links the code -->
+    <script src="movie.js"></script>
+</body>
